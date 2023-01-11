@@ -1,0 +1,754 @@
+/* common css start */
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+ul{
+  list-style: none;
+}
+.clr{
+  clear: both;
+}
+img{
+  vertical-align: middle;
+}
+.container{
+  width: 1180px;
+  margin: 0 auto;
+}
+/* common css end */
+/* navbar & banner css start */
+.nav{
+  height: 700px;
+  width: 100%;
+  background: url(../images/banner.jpg) no-repeat center / cover;
+}
+.menu{
+  height: 90px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.479);; 
+}
+.logo{
+  width: 25%;
+  float: left;
+}
+.logo a{
+  padding: 33px 0;
+}
+.ddmenu{
+  width: 60%;
+  float: left;
+  padding: 33px 0;
+}
+.ddmenu ul{
+  text-align: right;
+}
+.ddmenu li{
+  display: inline-block;
+}
+.ddmenu ul li a{
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 22px;
+  transition: all 0.3s ease .0s;
+}
+.ddmenu ul li a:hover{
+  color: #28b8d8;
+}
+.ddmenu ul li:last-child a{
+  border-right: 2px solid white;
+  padding: 0 25px;
+}
+.icon{
+  width: 15%;
+  float: left;
+  padding: 33px 0 ;
+  text-align: center;
+}
+
+.icon i{
+  padding: 0 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease .0s;
+}
+.icon i:hover{
+  color: #28b8d8;
+}
+.banner{
+  height: 610px;
+  width: 100%;
+  padding: 245px 0;
+
+}
+.banner p{
+  text-align: center;
+  transition: all 0.3s ease .0s;
+}
+.banner p:hover{
+  color: #28b8d8;
+}
+.banner .one{
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.banner .two{
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+.banner .three{
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+/* navbar & banner css end */
+/* offer css start */
+.offer{
+  width: 100%;
+  height: 705px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+.offer_head h2{
+  font-size: 30px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  padding-top: 40px;
+  transition: all 0.3s ease;
+}
+.offer_head h2:hover{
+  color: #28b8d8;
+}
+.offer_head p{
+  font-size: 14px;
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+  padding-top: 30px;
+  transition: all 0.3s ease;
+}
+.offer_head p:hover{
+  color: #28b8d8;
+}
+.offer_head h3{
+  font-size: 18px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 74px;
+  padding-bottom: 30px;
+  transition: all 0.3s ease;
+}
+.offer_head h3:hover{
+  color: #28b8d8;
+}
+.offer_item{
+  width: 31.2%;
+  float: left;
+  margin: 0 12px;
+  background-color: #ffffff;
+}
+.offer_inner{
+  text-align: center;
+  padding: 15px;
+
+}
+.offer_inner img{
+  width: 100%;
+}
+.offer_inner h3{
+  font-size: 17px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  padding-top: 25px;
+  transition: all 0.3s ease;
+}
+
+.offer_inner p{
+  font-size: 14px;
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+  padding-top: 16px;
+  transition: all 0.3s ease;
+}
+.offer_inner h3:hover{
+  color: #28b8d8;
+}
+/* offer css end */
+/* shots css start */
+.shots{
+  height: 590px;
+  width: 100%;
+  background-color: #2c2c2c;
+  position: relative;
+}
+.shots h2{
+  font-size: 18px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  padding-top: 80px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.shots h2:hover{
+  color: #28b8d8;
+}
+.shots::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 105px;
+  background-color: #535353;
+  top: 86px;
+  left: 707px;
+}
+.shots::after{
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 105px;
+  background-color: #535353;
+  top: 92px;
+  left: 707px;
+}
+.in{
+  position: relative;
+}
+.in::before{
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 105px;
+  background-color: #535353;
+  top: 86px;
+  left: 1093px;
+}
+.in::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 105px;
+  background-color: #535353;
+  top: 93px;
+  left: 1093px;
+}
+.shots_img{
+  width: 23%;
+  float: left;
+  padding-top: 28px;
+}
+.shots_img img{
+  width: 93%;
+  margin: 0 8px ;
+}
+.shots_img_special img{
+  height: 340px;
+  padding-top: 28px;
+} 
+.button{
+  text-align: center;
+  padding-top: 42px;
+}
+.button button{
+  height: 50px;
+  width: 180px;
+  border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease .0s;
+}
+.button button:hover{
+  background-color: goldenrod;
+  border: none;
+}
+.button i{
+  font-size: 18px;
+  color: white;
+}
+.button span{
+  font-size: 14px;
+  font-family: 'Roboto' sans-serif;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+}
+/* shots css end */
+
+/* journal css start */
+.about{
+  height: 670px;
+  width: 100%;
+  position: relative;
+}
+.about h2{
+  font-size: 18px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  padding-top: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.about h2:hover{
+  color: #28b8d8;
+}
+.about::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100px;
+  background-color: #373737;
+  top: 90px;
+  left: 756px;
+}
+.about::after{
+  position: absolute;
+  content: "";
+  height:1px ;
+  width: 100px;
+  background-color: #373737;
+  top: 93px;
+  left: 756px;
+}
+.journal_head{
+  position: relative;
+}
+.journal_head::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100px;
+  background-color: #373737;
+  top: 90px;
+  left: 682px;
+}
+.journal_head::after{
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100px;
+  background-color: #373737;
+  top: 93px;
+  left: 682px;
+}
+.journal_img{
+  padding-top: 33px;
+}
+.journal_item{
+  width: 30%;
+  float: left;
+  margin: 0 17px;
+  padding-bottom: 85px;
+}
+.journal_inner{
+  text-align: center;
+  border: 2px solid #e3e3e3;
+  background-color: white;
+  position: relative;
+}
+.journal_inner h3{
+  font-size: 16px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  padding-top: 28px;
+}
+.journal_inner span{
+  font-size: 12px;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+.journal_inner img{
+  width: 100%;
+  padding-top: 23px;
+  padding-bottom: 28px;
+}
+.journal_inner .text_one{
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  padding: 0 26px;
+  padding-bottom: 26px;
+  line-height: 22px;
+  text-align: justify;
+}
+.texts{
+  position: relative;
+}
+.texts .text_two{
+  font-size: 11px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  text-align: left;
+  padding: 0 26px;
+  padding-bottom: 30px;
+  display: block;
+}
+.texts::before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 90px;
+  top: 15px;
+  left: 21px;
+  background-color: #28b8d8;
+}
+.texts i{
+  position: absolute;
+  top: 0;
+  left: 309px;
+  font-size: 11px;
+  color: rgb(205, 204, 204);
+  transition: all 0.6s ease .0s;
+  cursor: pointer;
+}
+.texts i:hover{
+  font-size: 25px;
+  color: red;
+}
+.texts span{
+  position: absolute;
+  top: 0;
+  left: 322px;
+  font-size: 11px;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+/* journal css end */
+
+
+/* about css start */
+.about_services{
+  height: 400px;
+}
+.services_one{
+  width: 48%;
+  float: left;
+  position: relative;
+  margin-right: 22px;
+}
+.services_one h2{
+  font-size: 18px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.services_one h2:hover{
+  color: #28b8d8;
+}
+.services_one::before{
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100px;
+  top: 10px;
+  left: 185px;
+  background-color: #373737;
+}
+.services_one::after{
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100px;
+  top: 13px;
+  left: 185px;
+  background-color: #373737;
+}
+.services_one img{
+  margin-left: 20px;
+}
+.services_one p{
+  position: absolute;
+  top: 56px;
+  left: 244px;
+  font-size: 18px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 26px;
+}
+.services_one span{
+  position: absolute;
+  top: 153px;
+  left: 246px;
+  font-size:14px ;
+  font-family: 'Roboto';
+  font-weight: 400;
+  text-align: justify;
+  line-height: 22px;
+}
+.services_two{
+  width: 48%;
+  float: left;
+  position: relative;
+  margin-left: 22px;
+  
+}
+.services_two h2{
+  font-size: 18px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.services_two h2:hover{
+  color: #28b8d8;
+}
+.services_two::before{
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100px;
+  top: 10px;
+  left: 135px;
+  background-color: #373737;
+}
+.services_two::after{
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100px;
+  top: 13px;
+  left: 135px;
+  background-color: #373737;
+}
+.services_two_item{
+  height: 33.33%;
+  margin: 0 15px;
+}
+
+.services_two_item_inner i{
+  font-size: 40px;
+  color: black;
+  padding-right: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.services_two_item_inner i:hover{
+  color: #28b8d8;
+}
+.services_two_item_inner h3{
+  display: inline-block;
+  font-size: 17px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.services_two_item_inner p{
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  padding-left: 42px;
+  line-height: 20px;
+  padding-left: 60px;
+  padding-bottom: 25px;
+  
+}
+/* about css end */
+/* footer css start */
+.footer{
+  height: 380px;
+  background-color: #373737;
+}
+.touch{
+  width: 23%;
+  float: left;
+  padding-top: 70px;
+  margin-right: 26px;
+}
+.touch h2{
+  font-size: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  padding-bottom: 26px;
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.3s ease;
+}
+.touch h2:hover{
+  color: #28b8d8;
+}
+.description{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding-bottom: 37px;
+  line-height: 25px;
+  color: white;
+}
+.location{
+  padding-bottom: 11px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  color: white;
+  transition: all 0.3s ease;
+}
+.location:hover{
+  color: goldenrod;
+}
+.location i {
+  color: white;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.location i:hover {
+  color: goldenrod;
+}
+.call{
+  padding-bottom: 11px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  transition: all 0.3s ease;
+}
+.call:hover{
+  color: goldenrod;
+}
+.call i {
+  color: white; 
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.call i:hover{
+  color: goldenrod;
+}
+.message{
+  padding-bottom: 11px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  transition: all 0.3s ease;
+}
+.message:hover{
+  color: goldenrod;
+}
+.message i {
+  color: white;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.message i:hover{
+  color: goldenrod;
+}
+.twitter{
+  width: 23%;
+  float: left;
+  padding-top: 70px;
+  margin-right: 26px;
+
+}
+.twitter h2{
+  font-size: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  padding-bottom: 26px;
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.3s ease;
+}
+.twitter h2:hover{
+  color: #28b8d8;
+}
+.twitter p{
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  padding-bottom: 37px;
+  line-height: 25px;
+  color: white;
+}
+.posts{
+  width: 23%;
+  float: left;
+  padding-top: 70px;
+  margin-right: 26px;
+}
+.posts h2{
+  font-size: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  padding-bottom: 26px;
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.3s ease;
+}
+.posts h2:hover{
+  color: #28b8d8;
+}
+.posts .one{
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  line-height: 25px;
+  color: white;
+}
+.posts .two{
+  font-size: 12px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  padding-bottom: 25px;
+  color: white;
+}
+.au{
+  width: 23%;
+  float: left;
+  padding-top: 70px;
+}
+.au h2{
+  font-size: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  padding-bottom: 26px;
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.3s ease;
+}
+.au h2:hover{
+  color: #28b8d8;
+}
+.au p{
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  padding-bottom: 35px;
+  line-height: 25px;
+  color: white;
+}
+/* footer css end */
+/* copyright css start */
+.copy{
+  height: 90px;
+  background-color: #333333;
+}
+.copy p{
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: white;
+  padding: 40px 0 ;
+}
+/* copyright css end */

@@ -1,0 +1,64 @@
+#banner {
+  margin-top: 100px;
+}
+
+.banner_text {
+  padding-top: 30px;
+}
+
+.banner_text .subtitle,
+.banner_text .typer {
+  color: white;
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.banner_text h2 {
+  color: white;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.banner_text .content {
+  color: #c4cfde;
+  padding-right: 15%;
+  padding-top: 20px;
+  /* opacity: .8; */
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.banner_text span {
+  color: #ff014f;
+}
+
+.banner_text .typed {
+  color: white;
+}
+
+.banner_image {
+  padding-top: 30px;
+  position: relative;
+}
+
+.banner_image::before {
+  position: absolute;
+  z-index: -1;
+  width: 76%;
+  height: calc(95% - 110px);
+  content: "";
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  background: #202327;
+  /* box-shadow: 0px -10px 25px rgba(255, 255, 255, 0.439); */
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  ;
+  border-radius: 6px;
+}

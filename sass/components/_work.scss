@@ -1,0 +1,227 @@
+.work_head h2 {
+  margin-top: 100px;
+  // color: #fff;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  animation: ser_head 4s;
+  -webkit-animation: ser_head 4s linear infinite;
+  position: relative;
+  display: inline-block;
+}
+.work_head h2::after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  background-color: #ff014f;
+  bottom: 0;
+  left: 0;
+  animation: border_width 2s linear infinite;
+  -webkit-animation: border_width 2s linear infinite;
+}
+.work_head h2::before{
+  position: absolute;
+  content: '';
+  height: 2px;
+  background-color: #ff014f;
+  bottom: 0;
+  right: 0;
+  animation: border_width 2s linear infinite;
+  -webkit-animation: border_width 2s linear infinite;
+}
+
+
+// @keyframes ser_head {
+//   0% {
+//     color: white;
+//   }
+
+//   25% {
+//     color: #ff014f;
+//   }
+
+//   50% {
+//     color: goldenrod;
+//   }
+
+//   100% {
+//     color: white;
+//   }
+// }
+
+.work_item {
+  margin-top: 50px;
+}
+
+.work_img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.work_img img {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.work_item:hover .work_img img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.work_ol {
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  right: 0;
+  background-color: #ff014d67;
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 0% 100%);
+  opacity: 0;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.work_item:hover .work_ol {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.work_ol_two {
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  background-color: #ff014d67;
+  clip-path: polygon(0 0, 100% 0, 0 100%, 0% 100%);
+  opacity: 0;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work_item:hover .work_ol_two {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.work_img a {
+  position: absolute;
+  padding: 10px 20px;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  text-transform: capitalize;
+  color: white;
+  transition: all 0.5s ease;
+  transform: scale(0);
+  border-radius: 10px;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  border: 1px solid transparent;
+}
+
+.work_img a:hover {
+  color: #ff014f;
+  border-color: #fff;
+}
+
+.work_item:hover .work_img a {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+.work_text {
+  position: relative;
+  top: -40px;
+  color: white;
+  border-left: 1px solid #c4cfde;
+  border-right: 1px solid #c4cfde;
+  border-bottom: 1px solid #c4cfde;
+  opacity: 0;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  padding-left: 10px;
+}
+
+.work_text p {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+.work_text span {
+  color: #ff014f;
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  animation: p_name 4s infinite;
+  -webkit-animation: p_name 4s infinite;
+}
+
+
+@keyframes p_name {
+  0% {
+    color: #ff014f;
+  }
+
+  25% {
+    color: white;
+  }
+
+  50% {
+    color: cornflowerblue;
+  }
+
+  100% {
+    color: #ff014f;
+  }
+}
+
+.work_item:hover .work_text {
+  top: 0;
+  opacity: 1;
+}

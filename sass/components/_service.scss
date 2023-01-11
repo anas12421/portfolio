@@ -1,0 +1,108 @@
+.ser_head h2 {
+  margin-top: 100px;
+  //color: #fff;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  animation: ser_head 4s linear infinite;
+  -webkit-animation: ser_head 4s linear infinite;
+  position: relative;
+  display: inline-block;
+}
+
+.ser_head h2::after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  background-color: #ff014f;
+  bottom: 0;
+  left: 0;
+  animation: border_width 2s linear infinite;
+  -webkit-animation: border_width 2s linear infinite;
+}
+.ser_head h2::before{
+  position: absolute;
+  content: '';
+  height: 2px;
+  background-color: #ff014f;
+  bottom: 0;
+  right: 0;
+  animation: border_width 2s linear infinite;
+  -webkit-animation: border_width 2s linear infinite;
+}
+
+
+@keyframes ser_head {
+  0% {
+    color: #ff014f;
+  }
+
+  25% {
+    color: #fff;
+  }
+
+  100% {
+    color: #ff014f;
+  }
+}
+
+.ser_item {
+  margin-top: 50px;
+  color: white;
+  padding: 35px 20px 35px 20px;
+  border: 1px solid transparent;
+  animation: border_ani 1s;
+  -webkit-animation: border_ani 4s infinite;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin: 40px 12px 0 12px;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.ser_item:hover {
+  box-shadow: none;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+}
+
+@keyframes border_ani {
+  0% {
+    border-color: #ff014f;
+  }
+
+  25% {
+    border-color: #fff;
+  }
+
+  100% {
+    border-color: #ff014f;
+  }
+}
+
+.ser_item i {
+  color: #ff014f;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.ser_item h2 {
+  color: #c4cfde;
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: capitalize;
+}
+
+.ser_item p {
+  color: #c4cfde;
+  font-size: 16px;
+  line-height: 26px;
+}

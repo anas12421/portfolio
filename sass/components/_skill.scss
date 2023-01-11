@@ -1,0 +1,83 @@
+.skill_head h2 {
+  margin-top: 100px;
+  // color: #fff;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  animation: ser_head 4s;
+  -webkit-animation: ser_head 4s linear infinite;
+  position: relative;
+  display: inline-block;
+}
+
+.skill_head h2::after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  background-color: #ff014f;
+  bottom: 0;
+  left: 0;
+  animation: border_width 2s linear infinite;
+  -webkit-animation: border_width 2s linear infinite;
+}
+.skill_head h2::before{
+  position: absolute;
+  content: '';
+  height: 2px;
+  background-color: #ff014f;
+  bottom: 0;
+  right: 0;
+  animation: border_width 2s linear infinite;
+  -webkit-animation: border_width 2s linear infinite;
+}
+
+
+// @keyframes ser_head {
+//   0% {
+//     color: white;
+//   }
+
+//   25% {
+//     color: #ff014f;
+//   }
+
+//   50% {
+//     color: goldenrod;
+//   }
+
+//   100% {
+//     color: white;
+//   }
+// }
+
+
+.skill_rate {
+
+  margin-top: 50px;
+}
+
+.skill_rate h4 {
+  color: #c4cfde;
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.percentCount {
+  font-family: 'Raleway', sans-serif;
+  color: #c4cfde;
+}
+
+.html,
+.css,
+.php,
+.photoshop,
+.javascript,
+.jquery {
+  box-shadow: inset 8px 8px 16px rgba(0, 0, 0, 0.4588235294), inset -8px -8px 16px rgba(56, 62, 69, 0.4588235294);
+}
